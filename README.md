@@ -1,2 +1,2 @@
 # FunWinTop
-WinTop plugin as on the FunTime server
+All information avaliable in wiki - https://funwintop.arial.su
