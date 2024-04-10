@@ -1,0 +1,9 @@
+name: FunWinTop
+version: '1.0'
+main: me.arial.wintop.core.Main
+api-version: '1.16'
+depend:
+  - Vault
+
+commands:
+  win:

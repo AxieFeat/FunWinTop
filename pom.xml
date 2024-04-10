@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>me.arial.wintop</groupId>
+  <artifactId>FunWinTop</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+
+  <name>FunWinTop</name>
+    <modules>
+        <module>Core</module>
+        <module>Api</module>
+    </modules>
+
+    <properties>
+    <java.version>16</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <repositories>
+      <repository>
+          <id>papermc-repo</id>
+          <url>https://repo.papermc.io/repository/maven-public/</url>
+      </repository>
+      <repository>
+          <id>sonatype</id>
+          <url>https://oss.sonatype.org/content/groups/public/</url>
+      </repository>
+      <repository>
+          <id>jitpack.io</id>
+          <url>https://jitpack.io</url>
+      </repository>
+  </repositories>
+
+  <dependencies>
+      <dependency>
+          <groupId>com.destroystokyo.paper</groupId>
+          <artifactId>paper-api</artifactId>
+          <version>1.16.5-R0.1-SNAPSHOT</version>
+          <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>com.github.MilkBowl</groupId>
+          <artifactId>VaultAPI</artifactId>
+          <version>1.7</version>
+          <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>com.zaxxer</groupId>
+          <artifactId>HikariCP</artifactId>
+          <version>5.1.0</version>
+          <scope>compile</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>org.jdbi</groupId>
+          <artifactId>jdbi3-core</artifactId>
+          <version>3.38.0-rc3</version>
+          <scope>compile</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>org.jdbi</groupId>
+          <artifactId>jdbi3-caffeine-cache</artifactId>
+          <version>3.38.0</version>
+          <scope>compile</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>com.github.ben-manes.caffeine</groupId>
+          <artifactId>caffeine</artifactId>
+          <version>3.1.6</version>
+          <scope>compile</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>org.jdbi</groupId>
+          <artifactId>jdbi3-kotlin-sqlobject</artifactId>
+          <version>3.38.0-rc3</version>
+          <scope>compile</scope>
+      </dependency>
+  </dependencies>
+</project>
